@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500&display=swap');
+
+/* CSS variables — change one value here, updates everywhere */
+:root {
+  --black: #0a0a0a;
+  --white: #fafaf8;
+  --accent: #c84b31;
+  --gray: #6b6b6b;
+  --light-gray: #f0ede8;
+  --border: #e0ddd8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--white);
+  color: var(--black);
+  font-family: 'DM Sans', sans-serif;
+  /* DM Sans = clean readable body font */
+  /* Playfair Display = dramatic serif for headings */
+}
+
+/* page load fade in */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.page {
+  animation: fadeUp 0.4s ease forwards;
+}
