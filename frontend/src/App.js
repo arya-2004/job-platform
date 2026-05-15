@@ -3,6 +3,7 @@ import ResumeUpload from './components/ResumeUpload';
 import JobAnalyze from './components/JobAnalyze';
 import Dashboard from './components/Dashboard';
 import StatusUpdate from './components/StatusUpdate';
+import JobSearch from './components/JobSearch';
 import './App.css';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
     switch(activePage) {
       case 'upload': return <ResumeUpload setResumeId={setResumeId} />;
       case 'analyze': return <JobAnalyze resumeId={resumeId} />;
+      case 'search': return <JobSearch resumeId={resumeId} />;
       case 'status': return <StatusUpdate />;
       default: return <Dashboard />;
     }
@@ -25,6 +27,7 @@ function App() {
     { key: 'dashboard', label: 'Dashboard' },
     { key: 'upload', label: 'Upload Resume' },
     { key: 'analyze', label: 'Analyze Job' },
+    { key: 'search', label: 'Find Jobs' },
     { key: 'status', label: 'Track Status' },
   ];
 
