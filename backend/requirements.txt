@@ -82,4 +82,4 @@ websockets==15.0.1
 xxhash==3.7.0
 yarl==1.23.0
 zstandard==0.25.0
-PyPDF2==4.0.1
+PyPDF2==3.0.1
